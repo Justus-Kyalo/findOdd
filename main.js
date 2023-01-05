@@ -22,3 +22,9 @@ function findOdd(a) {
   // Return null if all the frequencies are even
   return null;
 }
+
+
+//ALTERNATIVE
+function findOdd(arr) {
+    return arr.find((item, index) => arr.filter(el => el == item).length % 2)
+  }
